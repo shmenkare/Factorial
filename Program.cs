@@ -23,10 +23,11 @@ namespace Factorial
 
                 fact *= i;
                
-                Console.WriteLine(i);
-                Console.Write("por ");
-                Console.Write(fact);
+                Console.WriteLine("i = {0}",i);
+                Console.WriteLine("fact = fact * i ");
                 Console.WriteLine();
+                Console.WriteLine("fact = {0}",fact);
+                
                 
             }
             Console.Write("El factorial de {0} es {1}",num,fact);
