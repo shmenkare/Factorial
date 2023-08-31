@@ -1,0 +1,9 @@
+Factorial.csproj
+Factorial.sln
+Factorial.suo
+.gitattributes
+Properties/
+bin/
+obj/
+App.config
+.vs/
