@@ -8,30 +8,36 @@ namespace Factorial
     class Program
     {
         static void Main(string[] args)
-        {
-            int i = 0;
+        {   // Factorial 2.0
+           
             int num = 0;
             int fact = 1;
+
             
             Console.WriteLine("Ingrese el numero a sacar el factorial");
             num = Convert.ToInt32(Console.ReadLine());
+            fact = Factorial(num);
+            Console.Write("El factorial de {0} es {1}",num,fact);
             
-
-            for (i = 1; i <= num; i++)
+            Console.ReadKey();
+        }
+        static int Factorial(int x)
+        {
+            int r = 1;
+            for (int i = 1; i <= x; i++)
             {
                 Thread.Sleep(500);
 
-                fact *= i;
-               
-                Console.WriteLine("i = {0}",i);
+                r *= i;
+
+                Console.WriteLine("i = {0}", i);
                 Console.WriteLine("fact = fact * i ");
                 Console.WriteLine();
-                Console.WriteLine("fact = {0}",fact);
-                
-                
+                Console.WriteLine("fact = {0}", r);
+
+
             }
-            Console.Write("El factorial de {0} es {1}",num,fact);
-            Console.ReadKey();
+             return r;
         }
     }
 }
